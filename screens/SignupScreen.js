@@ -22,8 +22,8 @@ function SignupScreen() {
         'Authentication failed!',
         'Could not sign you in. Please check your credentials or try again later.'
       );
+      setIsAuthenticating(false);
     }
-    setIsAuthenticating(false);
   }
 
   if (isAuthenticating) {
